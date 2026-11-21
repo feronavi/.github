@@ -12,9 +12,9 @@ Feronavi 是一个开源、自托管的项目协作平台：把团队、知识�
 [![RAG](https://img.shields.io/badge/RAG-Built--in-168B78)](https://github.com/JasperPengC/feronavi#rag)
 [![CRDT](https://img.shields.io/badge/CRDT-Real--time%20docs-805AD5)](https://github.com/JasperPengC/feronavi#collaboration)
 
-[Quick start](https://github.com/JasperPengC/feronavi#开始使用) ·
-[MCP setup](https://github.com/JasperPengC/feronavi/tree/main/packages/feronavi-mcp) ·
-[Documentation](https://github.com/JasperPengC/feronavi/tree/main/docs)
+[快速开始](https://github.com/JasperPengC/feronavi#开始使用) ·
+[MCP 接入](https://github.com/JasperPengC/feronavi/tree/main/packages/feronavi-mcp) ·
+[项目文档](https://github.com/JasperPengC/feronavi/tree/main/docs)
 
 </div>
 
@@ -32,9 +32,9 @@ Feronavi 是一个开源、自托管的项目协作平台：把团队、知识�
 - **CRDT 协同文档：**多人实时编辑，自动合并并在短暂断线后恢复本地变更。
 - **开放接口：**通过版本化 OpenAPI 接口和 MCP 客户端接入现有自动化体系。
 
-## Get started
+## 快速部署
 
-Run the prebuilt containers with Docker Compose. No local Node.js toolchain or source compilation is required.
+使用 Docker Compose 启动预构建镜像，无需安装 Node.js 工具链或从源码编译。
 
 ```bash
 mkdir feronavi && cd feronavi
@@ -44,11 +44,11 @@ docker compose pull
 docker compose up -d --wait
 ```
 
-Open `http://127.0.0.1:3000/setup` to create the first organization and administrator. The published application image supports `linux/amd64` and `linux/arm64`.
+访问 `http://127.0.0.1:3000/setup` 创建首个组织和管理员。已发布的应用镜像支持 `linux/amd64` 和 `linux/arm64`。
 
-**Images:** [`feronavi-app:0.2.0`](https://github.com/orgs/feronavi/packages/container/package/feronavi-app) · [`feronavi-db:16-0.2.0`](https://github.com/orgs/feronavi/packages/container/package/feronavi-db)
+**容器镜像：**[`feronavi-app:0.2.0`](https://github.com/orgs/feronavi/packages/container/package/feronavi-app) · [`feronavi-db:16-0.2.0`](https://github.com/orgs/feronavi/packages/container/package/feronavi-db)
 
-Read the [full product overview and deployment guide](https://github.com/JasperPengC/feronavi) for configuration, upgrades, MCP clients, and API details.
+配置、升级、MCP 客户端和 API 说明请参阅[产品介绍与部署指南](https://github.com/JasperPengC/feronavi)。
 
 ---
 
