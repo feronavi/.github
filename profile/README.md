@@ -2,9 +2,9 @@
 
 # Feronavi
 
-### Project work for people and AI agents, in one place.
+### 面向团队与 AI Agent 的项目协作空间
 
-An open-source, self-hosted workspace for planning work, building shared knowledge, and delivering projects. Bring your team and agents into the same workflows, with permissions and an audit trail.
+Feronavi 是一个开源、自托管的项目协作平台：把团队、知识和 Agent 放进同一套项目工作流，在权限、审计和可验证操作的约束下完成交付。
 
 [![License](https://img.shields.io/badge/license-AGPL--3.0-blue)](https://github.com/JasperPengC/feronavi/blob/main/LICENSE)
 [![Container](https://img.shields.io/badge/GHCR-0.2.0-2496ED?logo=docker&logoColor=white)](https://github.com/orgs/feronavi/packages/container/package/feronavi-app)
@@ -24,13 +24,13 @@ An open-source, self-hosted workspace for planning work, building shared knowled
   <img src="https://raw.githubusercontent.com/JasperPengC/feronavi/main/docs/screenshots/10-workbench-light.png" alt="Feronavi project workspace" width="100%" />
 </picture>
 
-## One workspace, shared by your team and agents
+## 一个工作空间，连接团队与 Agent
 
-- **Project delivery:** organize requests, work items, iterations, releases, and project knowledge in one self-hosted platform.
-- **Built-in RAG:** ask across projects or focus on one project; answers include references back to source material.
-- **Full MCP server:** let compatible agents discover tools, read project context, perform permission-checked actions, and verify the results.
-- **CRDT document collaboration:** edit documents together in real time, resolve concurrent changes, and recover local edits after a short disconnect.
-- **Open interfaces:** connect MCP clients and integrate through the platform's versioned OpenAPI endpoints.
+- **项目交付：**在一个自托管平台内管理需求、工作项、迭代、发布和项目知识。
+- **内置 RAG：**支持跨项目检索，也支持限定项目范围对话，回答带有来源引用。
+- **完整 MCP Server：**兼容的 Agent 可以发现工具、读取项目上下文、执行权限校验后的操作，并复读核验结果。
+- **CRDT 协同文档：**多人实时编辑，自动合并并在短暂断线后恢复本地变更。
+- **开放接口：**通过版本化 OpenAPI 接口和 MCP 客户端接入现有自动化体系。
 
 ## Get started
 
@@ -52,14 +52,9 @@ Read the [full product overview and deployment guide](https://github.com/JasperP
 
 ---
 
-### 面向团队与 Agent 的项目协作空间
+### 立即开始
 
-Feronavi 是开源、自托管的项目协作平台。团队与 Agent 共用项目上下文，在同一套权限和审计规则下推进工作。
+使用 GHCR 预构建镜像和 Docker Compose 开箱部署，无需安装 Node.js 或本地编译工具链。
 
-- **内置 RAG：**跨项目检索，回答带来源引用。
-- **完整 MCP Server：**Agent 可发现工具、读取上下文、执行有权限约束的业务操作，并复读核验结果。
-- **CRDT 实时协作：**多人同时编辑文档，自动合并并支持短暂离线恢复。
-- **开箱部署：**使用 GHCR 预构建镜像与 Docker Compose，无需本地编译。
-
-[查看中文 README 与部署说明](https://github.com/JasperPengC/feronavi#top) ·
+[查看产品 README 与部署说明](https://github.com/JasperPengC/feronavi#top) ·
 [MCP 接入指南](https://github.com/JasperPengC/feronavi/tree/main/packages/feronavi-mcp)
