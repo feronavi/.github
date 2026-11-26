@@ -7,7 +7,7 @@
 开源、自托管的项目协作平台，连接需求、知识与交付。多人一起写文档，项目知识随问随用，Agent 直接参与业务执行。
 
 [![License](https://img.shields.io/badge/license-AGPL--3.0-blue)](https://github.com/JasperPengC/feronavi/blob/main/LICENSE)
-[![Container](https://img.shields.io/badge/GHCR-0.3.0-2496ED?logo=docker&logoColor=white)](https://github.com/orgs/feronavi/packages/container/package/feronavi-app)
+[![Container](https://img.shields.io/badge/GHCR-0.2.1-2496ED?logo=docker&logoColor=white)](https://github.com/orgs/feronavi/packages/container/package/feronavi-app)
 [![MCP](https://img.shields.io/badge/MCP-Server-5B6EE1)](https://github.com/JasperPengC/feronavi/tree/main/packages/feronavi-mcp)
 [![RAG](https://img.shields.io/badge/RAG-Built--in-168B78)](https://github.com/JasperPengC/feronavi#rag)
 [![CRDT](https://img.shields.io/badge/CRDT-Real--time%20docs-805AD5)](https://github.com/JasperPengC/feronavi#collaboration)
@@ -15,7 +15,7 @@
 [快速开始](https://github.com/JasperPengC/feronavi#get-started) ·
 [MCP 接入](https://github.com/JasperPengC/feronavi/tree/main/packages/feronavi-mcp) ·
 [使用文档](https://feronavi.com/zh/docs/overview/) ·
-[最新版本](https://github.com/JasperPengC/feronavi/releases/tag/v0.3.0)
+[正式版本](https://github.com/JasperPengC/feronavi/releases)
 
 </div>
 
@@ -35,11 +35,11 @@
 
 ## 快速部署
 
-使用 Docker Compose 启动预构建镜像，无需安装 Node.js 工具链或从源码编译。
+使用 Docker Compose 安装已发布的 **0.2.1**，无需安装 Node.js 工具链或从源码编译。当前主分支正在准备 0.3.0，新增需求变更、正式测试与发布证据；新版本产物以正式发布页为准。
 
 ```bash
 mkdir feronavi && cd feronavi
-curl -fL https://raw.githubusercontent.com/JasperPengC/feronavi/v0.3.0/compose.yaml -o compose.yaml
+curl -fL https://raw.githubusercontent.com/JasperPengC/feronavi/v0.2.1/compose.yaml -o compose.yaml
 (umask 077; test -e .env || echo "DB_PASSWORD=$(openssl rand -hex 24)" > .env)
 docker compose pull
 docker compose up -d --wait
@@ -47,11 +47,11 @@ docker compose up -d --wait
 
 访问 `http://127.0.0.1:3000/setup` 创建首个组织和管理员。本版应用镜像支持并验证了 `linux/amd64`；其他架构尚未完成验收。
 
-**容器镜像：**[`feronavi-app:0.3.0`](https://github.com/orgs/feronavi/packages/container/package/feronavi-app) · [`feronavi-db:16-0.2.0`](https://github.com/orgs/feronavi/packages/container/package/feronavi-db)
+**容器镜像：**[`feronavi-app:0.2.1`](https://github.com/orgs/feronavi/packages/container/package/feronavi-app) · [`feronavi-db:16-0.2.0`](https://github.com/orgs/feronavi/packages/container/package/feronavi-db)
 
-MCP 桥接包配套 `feronavi-mcp@0.1.1`；需求变更、正式测试和发布证据可通过同一套权限规则交接给 Agent。
+已发布的 MCP 桥接包为 `feronavi-mcp@0.1.0`。0.3.0 配套的 `0.1.1` 正在验收，正式发布前可从源码构建验证。
 
-升级与回退请先阅读[0.3.0 升级说明](https://github.com/JasperPengC/feronavi/blob/v0.3.0/UPGRADING.md)。配置、MCP 客户端和 API 说明请参阅[产品介绍与部署指南](https://github.com/JasperPengC/feronavi)。
+准备升级到 0.3.0 时，请先确认目标产物已发布，再阅读[升级说明](https://github.com/JasperPengC/feronavi/blob/main/UPGRADING.md)。配置、MCP 客户端和 API 说明请参阅[产品介绍与部署指南](https://github.com/JasperPengC/feronavi)。
 
 ## 社区
 
