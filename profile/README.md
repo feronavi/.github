@@ -15,6 +15,7 @@
 [快速开始](https://github.com/JasperPengC/feronavi#get-started) ·
 [MCP 接入](https://github.com/JasperPengC/feronavi/tree/main/packages/feronavi-mcp) ·
 [使用文档](https://feronavi.com/zh/docs/overview/) ·
+[变更日志](https://github.com/JasperPengC/feronavi/blob/main/CHANGELOG.md) ·
 [正式版本](https://github.com/JasperPengC/feronavi/releases)
 
 </div>
